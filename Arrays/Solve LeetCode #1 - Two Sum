@@ -1,3 +1,22 @@
+"""
+Problem: 1. Two Sum
+Difficulty: Easy
+Language: Python
+
+Approach:
+- Use a hash map (dictionary) to store each number and its index as we iterate.
+- For every number, calculate the complement (target - current number).
+- If the complement has already been seen, we have found the required pair.
+- Otherwise, store the current number and continue.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+LeetCode:
+https://leetcode.com/problems/two-sum/
+"""
+Solution:
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         # Stores previously seen numbers and their indices.
